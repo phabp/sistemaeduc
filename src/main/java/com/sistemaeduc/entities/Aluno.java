@@ -18,7 +18,7 @@ public class Aluno {
     private LocalDate datadNascimento;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "professor_id") // chave estrangeira
+    @JoinColumn(name = "professor_id") 
     private Professor professor;
 
     public Aluno() {
