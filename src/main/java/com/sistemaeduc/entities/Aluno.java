@@ -31,7 +31,7 @@ public class Aluno {
         this.professor = professor;
     }
 
-    // Getters e Setters
+    
 
     public Long getId() {
         return id;
