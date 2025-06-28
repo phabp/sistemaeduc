@@ -164,6 +164,19 @@ public class MenuService {
                     System.out.println("Nome: " + a.getNome());
                     System.out.println("CPF: " + a.getCpf());
                     System.out.println("Nascimento: " + a.getDatadNascimento());
+
+                    if (a.getProfessor() != null) {
+                        System.out.println("Professor: " + a.getProfessor().getNome());
+                        if (a.getProfessor().getEscola() != null) {
+                            System.out.println("Escola: " + a.getProfessor().getEscola().getNome());
+                        } else {
+                            System.out.println("Escola: N/A");
+                        }
+                    } else {
+                        System.out.println("Professor: N/A");
+                        System.out.println("Escola: N/A");
+                    }
+
                     System.out.println();
                 }
             }
@@ -171,6 +184,7 @@ public class MenuService {
             System.out.println("Erro: " + e.getMessage());
         }
     }
+
 
     public void buscarProfessorPorNome(Scanner scanner) {
         System.out.print("Parte do nome: ");
@@ -186,6 +200,13 @@ public class MenuService {
                     System.out.println("Nome: " + p.getNome());
                     System.out.println("CPF: " + p.getCpf());
                     System.out.println("Nascimento: " + p.getDataNascimento());
+                    
+                    if (p.getEscola() != null) {
+                        System.out.println("Escola: " + p.getEscola().getNome());
+                    } else {
+                        System.out.println("Escola: N/A");
+                    }
+                    
                     System.out.println();
                 }
             }
@@ -193,6 +214,7 @@ public class MenuService {
             System.out.println("Erro: " + e.getMessage());
         }
     }
+
 
     public void listarAlunosPorProfessor(Scanner scanner) {
         System.out.print("ID do professor: ");
