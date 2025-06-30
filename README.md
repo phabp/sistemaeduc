@@ -1,4 +1,4 @@
-# SISTEMAEDUC - Backend
+# SISTEMAEDUC 
 
 Este projeto consiste em um **sistema de gerenciamento escolar** desenvolvido com **Java** e **Spring Boot**, que tem como objetivo centralizar e facilitar o controle de usuários dentro de uma plataforma educacional. Ele permite o cadastramento de novos usuários/login com usuário existente.
 Ao ingressar no sistema, o usuário tem acesso a algumas funcionalidades, tais como cadastrar alunos, escolas e professores, vinculá-los entre si e também consultar dados a respeito de cada um individualmente ou até mesmo listá-los de form integral. Tudo para haja um básico controle de um sistema escolar.
@@ -9,7 +9,7 @@ A API foi desenvolvida com foco em boas práticas, organização modular e segur
 
 ## 📌 Tecnologias Utilizadas
 
-- **Java 17+**
+- **Java**
 - **Spring Boot**
 - **Spring Web**
 - **Spring Data JPA**
